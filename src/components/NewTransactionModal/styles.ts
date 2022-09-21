@@ -61,6 +61,10 @@ export const Content = styled(Dialog.Content)`
         transition: background-color 0.2s;
       }
     }
+
+    p {
+      color: ${(props) => props.theme['red-300']};
+    }
   }
 `
 

@@ -10,14 +10,21 @@ import {
 import * as z from 'zod'
 import { useForm, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useContext } from 'react'
 import { TransactionsContext } from '../../contexts/TransactionsContext'
 import { useContextSelector } from 'use-context-selector'
 
 const newTransactionFormSchema = z.object({
-  description: z.string(),
-  price: z.number(),
-  category: z.string(),
+  description: z.string().min(1, { message: 'Preencha a descrição.' }),
+  price: z
+    .number({
+      required_error: 'Preencha o preço.',
+      invalid_type_error: 'Preencha o preço.',
+    })
+    .lte(999999999, 'Valor máximo excedido.'),
+  category: z
+    .string()
+    .min(1, 'Preencha a categoria.')
+    .max(20, 'Número máximo de caracteres atingido.'),
   type: z.enum(['income', 'outcome']),
 })
 
@@ -35,7 +42,7 @@ export function NewTransactionModal() {
     control,
     register,
     handleSubmit,
-    formState: { isSubmitting },
+    formState: { isSubmitting, errors },
     reset,
   } = useForm<NewTransactionFormInputs>({
     resolver: zodResolver(newTransactionFormSchema),
@@ -43,6 +50,12 @@ export function NewTransactionModal() {
       type: 'income',
     },
   })
+
+  const message = {
+    description: errors.description?.message,
+    price: errors.price?.message,
+    category: errors.category?.message,
+  }
 
   async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
     const { description, price, category, type } = data
@@ -69,27 +82,26 @@ export function NewTransactionModal() {
         </CloseButton>
 
         <form action="" onSubmit={handleSubmit(handleCreateNewTransaction)}>
+          {errors && <p>{message.description}</p>}
           <input
+            maxLength={50}
             type="text"
             placeholder="Descrição"
-            required
             {...register('description')}
           />
-
+          {errors && <p>{message.price}</p>}
           <input
-            type="text"
+            type="number"
             placeholder="Preço"
-            required
             {...register('price', { valueAsNumber: true })}
           />
-
+          {errors && <p>{message.category}</p>}
           <input
+            maxLength={20}
             type="text"
             placeholder="Categoria"
-            required
             {...register('category')}
           />
-
           <Controller
             control={control}
             name="type"
@@ -112,7 +124,6 @@ export function NewTransactionModal() {
               )
             }}
           />
-
           <button type="submit" disabled={isSubmitting}>
             Cadastrar
           </button>
