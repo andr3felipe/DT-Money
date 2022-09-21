@@ -2,15 +2,15 @@
 # DT Money
 * [GIF](#GIF)
 * [FEITO COM](#FEITO-COM)
-* [FUNCIONALIDADES](#FUNCIONALIDADES-/-FEATURES)
-* [LINK PARA TESTE DO PROJETO](#LINK-PARA-TESTE-DO-PROJETO-/-LINK-TO-TEST-THE-PROJECT)
+* [FUNCIONALIDADES](#FUNCIONALIDADES)
+* [COMO TESTAR](#COMO-TESTAR)
 
 ## ENGLISH
 # DT Money
 * [GIF](#GIF)
 * [MADE WITH](#MADE-WITH)
 * [FEATURES](#FEATURES)
-* [LINK TO TEST THE PROJECT](#LINK-PARA-TESTE-DO-PROJETO-/-LINK-TO-TEST-THE-PROJECT)
+* [HOW TO TEST](#HOW-TO-TEST)
 
 
 # GIF
@@ -35,9 +35,19 @@
 <li>Listagem entrada/saida.</li>
 <li>Filtro de busca</li>
 <li>Mostrar os valores de entradas, saidas e total.</li>
+<li>Deletar</li>
 </ul>
 <br>
 <br>
+
+### COMO TESTAR
+<pre>
+<code>Abra o terminal de sua preferência ou digite cmd na barra de busca do windows.</code>
+<code>Rode o comando git clone https://github.com/andr3felipe/DT-Money.git</code>
+<code>Navegue até a pasta clonada usando o terminal.</co>
+<code>Para iniciar a aplicação digite o comando npm run dev.</co>
+<code>Para iniciar o backend da aplicação digite npm run dev:server.</co>
+</pre>
 
 ## ENGLISH
 
@@ -58,9 +68,12 @@
 <li>List income/expenses.</li>
 <li>Search filter.</li>
 <li>Show income, expenses and total value.</li>
+<li>Delete</li>
 </ul>
 <br>
 <br>
+
+### HOW TO TEST
 
 ### LINK TO TEST THE PROJECT
 <a href="https://stellar-meringue-14a04f.netlify.app/">Coffee Delivery</a>
