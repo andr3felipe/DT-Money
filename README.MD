@@ -42,11 +42,13 @@
 
 ### COMO TESTAR
 <pre>
-<code>Abra o terminal de sua preferência ou digite cmd na barra de busca do windows.</code>
-<code>Rode o comando git clone https://github.com/andr3felipe/DT-Money.git</code>
-<code>Navegue até a pasta clonada usando o terminal.</co>
-<code>Para iniciar a aplicação digite o comando npm run dev.</co>
-<code>Para iniciar o backend da aplicação digite npm run dev:server.</co>
+<ul>
+<li><code>Abra o terminal de sua preferência ou digite cmd na barra de busca do windows.</code></li>
+<li><code>Rode o comando git clone https://github.com/andr3felipe/DT-Money.git</code></li>
+<li><code>Navegue até a pasta clonada usando o terminal.</code></li>
+<li><code>Para iniciar a aplicação digite o comando npm run dev.</code></li>
+<li><code>Para iniciar o backend da aplicação digite npm run dev:server.</code></li>
+<ul>
 </pre>
 
 ## ENGLISH
