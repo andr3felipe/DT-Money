@@ -40,15 +40,27 @@
 <br>
 <br>
 
-### COMO TESTAR
+### COMO RODAR A APLICAÇÃO
+1. No terminal, clone o projeto:
 <pre>
-<ul>
-<li><code>Abra o terminal de sua preferência ou digite cmd na barra de busca do windows.</code></li>
-<li><code>Rode o comando git clone https://github.com/andr3felipe/DT-Money.git</code></li>
-<li><code>Navegue até a pasta clonada usando o terminal.</code></li>
-<li><code>Para iniciar a aplicação digite o comando npm run dev.</code></li>
-<li><code>Para iniciar o backend da aplicação digite npm run dev:server.</code></li>
-<ul>
+git clone https://github.com/andr3felipe/DT-Money.git
+</pre>
+2. Entre na pasta do projeto:
+<pre>
+cd DT-Money
+</pre>
+3. Instale as dependências:
+<pre>
+npm install
+</pre>
+4. Execute a aplicação:
+<pre>
+npm run dev
+</pre>
+5. Para rodar o servidor abra um novo terminal e navegue novamente até a pasta <strong>DT-Money</strong> repetindo o passo 2.
+- <p>Execute o server:</p>
+<pre>
+npm run dev:server
 </pre>
 
 ## ENGLISH
@@ -76,6 +88,25 @@
 <br>
 
 ### HOW TO TEST
+1. On the terminal, clone the project:
+<pre>
+git clone https://github.com/andr3felipe/DT-Money.git
+</pre>
+2. Go to project folder:
+<pre>
+cd DT-Money
+</pre>
+3. Install dependencies:
+<pre>
+npm install
+</pre>
+4. Run the application:
+<pre>
+npm run dev
+</pre>
+5. To run the server, open a new terminal and go to the project folder <strong>DT-Money</strong> repeating the step 2.
+- <p>Run the server:</p>
+<pre>
+npm run dev:server
+</pre>
 
-### LINK TO TEST THE PROJECT
-<a href="https://stellar-meringue-14a04f.netlify.app/">Coffee Delivery</a>
