@@ -33,9 +33,9 @@
 <ul>
 <li>Adicionar entrada/saida.</li>
 <li>Listagem entrada/saida.</li>
-<li>Filtro de busca</li>
+<li>Filtro de busca.</li>
 <li>Mostrar os valores de entradas, saidas e total.</li>
-<li>Deletar</li>
+<li>Deletar.</li>
 </ul>
 <br>
 <br>
@@ -82,7 +82,7 @@ npm run dev:server
 <li>List income/expenses.</li>
 <li>Search filter.</li>
 <li>Show income, expenses and total value.</li>
-<li>Delete</li>
+<li>Delete.</li>
 </ul>
 <br>
 <br>
