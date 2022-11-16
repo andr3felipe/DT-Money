@@ -14,7 +14,7 @@
 
 
 # GIF
-<img src="src/assets/gif/DT-Money.gif"/>
+<img src="src/assets/DT-Money.gif"/>
 
 
 ### FEITO COM
